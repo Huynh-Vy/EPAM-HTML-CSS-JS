@@ -1,0 +1,68 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
+  \***************************************************************************************************************/
+body {
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  background: black;
+  color: lime;
+  margin: 3em;
+}
+
+strong {
+  text-decoration: underline;
+}
+
+button {
+  background: lime;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 1.2em;
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:active {
+  background: lime;
+  border-radius: 400px;
+}
+button#reset {
+  display: block;
+  text-align: center;
+}
+
+.scoreboard {
+  width: 14em;
+  margin: auto;
+  border: 1px solid lime;
+}
+.scoreboard h2 {
+  border-bottom: 1px solid lime;
+  margin: 0;
+  padding: 10px;
+}
+.scoreboard table {
+  margin: 10px auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+.scoreboard table th,
+.scoreboard table td {
+  text-align: center;
+}
+.scoreboard table td {
+  font-size: 3em;
+  padding: 0 20px;
+}
+
+#status {
+  margin-top: 20px;
+}
+
+#result {
+  margin-top: 20px;
+}

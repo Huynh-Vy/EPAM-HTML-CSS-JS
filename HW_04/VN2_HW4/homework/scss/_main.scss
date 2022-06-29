@@ -1,0 +1,294 @@
+// Write your styles here
+@mixin fontStyleBold ($font-family, $font-color, $font-size) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $font-color;
+    font-weight: bold;
+}
+
+@mixin fontStyleNormal ($font-family, $font-color, $font-size) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $font-color;
+}
+
+@mixin buttonStyle ($paddingTopBottom, $paddingLeftRight, $font-size, $font-family) {
+    background-color: $button-color;
+
+    border: none;
+    border-radius: 2px;
+    padding: $paddingTopBottom $paddingLeftRight;
+
+    color: white;
+    font-weight: bold;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+@mixin linkStyleWhite ($font-family, $font-size) {
+    color: white;
+    $font-family: $font-family;
+    $font-size: $font-size;
+}
+
+@mixin linkStyleGrey ($font-family, $font-size) {
+    color: $colorGrey;
+    $font-family: $font-family;
+    $font-size: $font-size;
+}
+
+@mixin highlight ($sizeX, $sizeY, $positionX, $positionY) {
+    background: linear-gradient(120deg, $colorHighLight 0%, $colorHighLight 100%);
+    background-repeat: no-repeat;
+    background-size: $sizeX $sizeY;
+    background-position: $positionX $positionY;
+}
+
+.linear {
+    background: linear-gradient(45deg, $color-linear-left 10%, $color-liner-right);
+}
+
+
+body {
+    margin: 0;
+    background-color: $body-background-color;
+}
+
+.header {
+    background: $header-background no-repeat center;
+    background-size: cover;
+    border-bottom-right-radius: 40% 40%;
+
+    height: 32rem;
+    width: 100%;
+
+    .header-wrap {
+        width: $full-width;
+        max-width: $container;
+        padding: 0.4rem 0 0 8rem;
+
+        .landing-logo {
+            img {
+                float: left;
+                margin-right: 0.8rem;
+            }
+
+            p{
+                float: left;
+                color: $font-color;
+                @include fontStyleBold($hind-font, $font-color, 1.2rem);
+                text-align: center;
+                line-height: 1.5rem;
+                margin-top: 3px;
+
+                span {
+                    display: block;
+                    font-size: 0.5rem;
+                    margin-top: -0.5rem;
+                }
+            }
+
+            &::after {
+                clear: both;
+                content: "";
+                display: table;
+            }
+        }
+        
+        .header_heading {
+            width: 30%;
+            position: relative;
+            margin-top: 1rem;
+            @include highlight(100%, 31%, -149px, 95%);
+            @include fontStyleBold($source-font, $font-color, 2.8rem);
+            line-height: 3.1rem; 
+        }
+
+        .header_text {
+            width: 40%;
+            margin-top: -1.7rem;
+            margin-left: -2.1rem;
+
+            white-space: pre;
+            line-height: 1.1rem;
+            @include fontStyleNormal($fresca-font, $font-color, 0.7rem);
+        }
+
+        div {
+            width: 26.5%;
+            .header_button {
+                @include buttonStyle(0.7rem, 2rem, 0.8rem, $source-font);
+                margin-top: 1.8rem;
+            }
+    
+            .login {
+                float: right;
+                padding: 2.3rem 0;
+                @include linkStyleWhite($source-font, 0.8rem);
+            }
+        }
+    }
+}
+
+.section {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    
+    .section_text {
+        @include fontStyleBold($hind-font, $font-color, 1.8rem);
+        text-align: center;
+        background: linear-gradient(120deg, $colorHighLight 0%, $colorHighLight 100%);
+        line-height: 3rem;
+        @include highlight(11.7%, 90%, 578px, -9px);
+    }
+
+    .section_card_wrap {
+        width: 70%;
+        padding-left: 10rem;
+
+        .section_card {
+            background-color: $card-background-color;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            display: flex;
+           
+            .section_card_img {
+                object-fit: cover;
+                height: 13rem;
+                padding: 1rem;
+                border-radius: 20px;
+                display: block;
+            }
+
+            .section_card_right_container {
+                padding: 2rem 4rem 1rem 4rem;
+                text-align: justify;
+                color: $colorGrey;
+                text-align: center;
+
+                .section_card_heading {
+                    @include fontStyleBold($source-font, white, 1rem);
+                }
+
+                .section_card_text {
+                    @include fontStyleNormal($source-font, $colorGrey, 0.75rem);
+                    text-align: justify;
+                    margin-top: 1.7rem;
+                    line-height: 1.3rem;
+                    margin-bottom: 1rem;
+                }
+
+                .section_link {
+                    @include linkStyleGrey($source-font, 0.75rem);
+                }
+                
+            }
+        }
+    }
+
+    .section_banner {
+        @extend .linear;
+        margin-left: 8rem;
+        margin-top: 3.5rem;
+        border-radius: 4px;
+
+        width: 76%;
+        position: relative;
+        z-index: 1;
+        top: 3rem;
+        left: 0;
+
+        .section_banner_text_wrap {
+            .section_banner_heading {
+                @include fontStyleBold($source-font, $font-color, 1.1rem);
+                padding: 0.8rem 0 0 6rem;
+                @include highlight(4.5%, 96%, 164px, 6px);
+            }
+
+            .section_banner_text {
+                @include fontStyleNormal($source-font, $colorGrey, 0.7rem);
+                padding: 0 0 1.7rem 6rem;
+                margin-top: -0.4rem;
+            }
+        }
+
+        .section_banner_button {
+            float: left;
+            margin: 1.7rem 7rem;
+            border-radius: 4px;
+            border: none;
+            @include buttonStyle(0.5rem, 1.7rem, 0.7rem, $source-font);
+
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+.footer {
+    background-color: $card-background-color;
+    .footer-wrap {
+        width: 100%;
+        max-width: $container;
+        margin: 0 auto;
+        display: flex;
+        padding: 4.5rem 0 2.5rem;
+        color: $colorGrey;
+
+        .footer_logo {
+           flex: 4.5;
+
+            img {
+                float: left;
+                margin-right: 0.8rem;
+            }
+
+            p{
+                float: left;
+                color: $font-color;
+                @include fontStyleBold($hind-font, $colorGrey, 1.2rem);
+                text-align: center;
+                line-height: 1.5rem;
+                margin-top: 3px;
+
+                span {
+                    display: block;
+                    font-size: 0.5rem;
+                    margin-top: -0.5rem;
+                }
+            }
+        }
+
+        .footer_text {
+            flex: 4.5;
+            font-size: 0.7rem;
+            font-family: $source-font;
+            line-height: 1.2rem;
+
+            width: 20%;
+            margin: 0 25rem 0 11rem;
+        }
+
+        .footer-cr {
+            flex: 3;
+            font-size: 0.7rem;
+            font-family: $source-font;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+$card-image-width : ("experts": 19rem, "content": 18rem, "certificate" : 20rem);
+@each $alt, $width in $card-image-width {
+    img[alt ~= #{$alt}] {
+        width: $width;
+    }
+}
+
+
+
+
+

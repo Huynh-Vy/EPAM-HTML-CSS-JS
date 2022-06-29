@@ -1,0 +1,658 @@
+/*
+* Colors used in design.
+*   primary: #0078aa;
+*   dark: #363636;
+*   light: #fff;
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul, li {
+	list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 60%;
+}
+
+.header-top {
+  height: 8rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  z-index: 999;
+}
+
+.header-top__logo {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.header-top__menu {
+  text-align: center;
+}
+
+.menu a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  padding: 0 0.3rem;
+}
+
+.menu a:hover {
+  color: #0078aa;
+  transition: color 0.4s;
+}
+
+.banner-bg img {
+  width: 100%;
+  object-fit: cover;
+  height: 51rem;
+}
+
+.header-banner__info {
+  position: relative;
+}
+
+.header-banner__detail {
+  position: absolute;
+  z-index: 1;
+  top: -32rem;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 40rem;
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 4.3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.banner-description {
+  color: #9f9c9c;
+  font-size: 1.4rem;
+}
+
+.banner-icon {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+.heart-icon, .kit-medical-icon, .stethoscope {
+  width: 4rem;
+  height: 4rem;
+  background-color: #0078aa;
+  border: 2px solid #0078aa;
+  border-radius: 50%;
+  float: left;
+  position: relative;
+}
+
+.heart-icon:hover, .kit-medical-icon:hover, .stethoscope:hover {
+  background-color: white;
+  transition: background-color 0.4s;
+}
+
+.heart-icon:hover .fa-heart-pulse, 
+.kit-medical-icon:hover .fa-kit-medical,
+.stethoscope:hover .fa-stethoscope {
+  color: #0078aa;
+}
+
+.fa-heart-pulse, .fa-kit-medical, .fa-stethoscope {
+  font-size: 2.5rem;
+  color: white;
+  position: absolute;
+  left: 15%;
+  top: 18%;
+}
+.about-image {
+  margin-top: 2rem;
+}
+
+.about-image img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.button-up {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  top: 90%;
+  right: 12%;
+  z-index: 5;
+  border-radius: 50%;
+  border: 2px solid #0078aa;
+  background-color: #0078aa;
+}
+
+.button-up:hover {
+  background-color: white;
+  transition: 0.2s;
+}
+
+.button-up:hover .fa-arrow-up {
+  color: #0078aa;
+  transition: color 0.2s;
+}
+
+.fa-arrow-up {
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  left: 36%;
+  top: 30%;
+}
+
+.about-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.about-info__title .top {
+  font-weight: bold;
+  font-size: 2.7rem;
+}
+
+.about-info__title .bottom {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #0078ac;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.about-info__content {
+  margin-top: 1.5rem;
+
+}
+
+.about-info__content__detail {
+  padding: 0 2rem;
+}
+
+.fa-arrow-right {
+  color: #0078aa;
+}
+
+.detail {
+  margin-bottom: 1.2rem;
+}
+
+.detail-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.detail-content {
+  color: #9f9c9c;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+}
+
+.service {
+  background-image: url('../img/services_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  width: 100%;
+  height: 145rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.service-title .top {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.service-title .bottom {
+  text-transform: uppercase;
+  margin-top: 0.7rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.service-detail {
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+}
+
+.service-detail__content {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service-detail__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.service-detail__description {
+  font-size: 1.2rem;
+}
+
+.bg-blue {
+  background-color: #47c9e5;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.font-white {
+  color: white;
+}
+
+.font-blue {
+  color: #0078aa;
+}
+
+.bg-frame {
+  border: 1px solid #0078aa;
+}
+
+.price {
+  margin-top: 4rem;
+}
+
+.price-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.price-title__top .top {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.price-title__top .bottom {
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.price-content {
+  text-align: center;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.price-content__detail {
+  padding: 4rem 0 2rem 0;
+}
+
+.price-content__title {
+  margin-bottom: 3rem;
+}
+
+.price-content__title h3{
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.price-content__price {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.price-content__treatment {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.price-content__service ul li {
+  margin-bottom: 2rem;
+}
+
+.price-content__button button {
+  color: #0078aa;
+  font-weight: 700;
+  outline: none;
+  border: 2px solid #0078aa;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.price-content__button button:hover {
+  background-color: #0078aa;
+  color: white;
+  transition: 0.2s;
+}
+
+li .fa-xmark {
+  font-size: 1.5rem;
+}
+
+.contact-image img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.contact-form__title {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contact-form__info {
+  text-align: center;
+}
+
+.contact-form__title .top {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.contact-form__title .top span {
+  display: block;
+}
+
+.contact-form__title .bottom {
+  text-transform: uppercase;
+  margin-top: 0.7rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.contact-form__info form input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border:  none;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 2rem 0 1rem 0;
+}
+
+#fullName, #email, #phone, #subject {
+  font-style: italic;
+}
+
+#subject {
+  border: none;
+}
+
+#submit {
+  background-color: #0078aa;
+  border: 1px solid #0078aa;
+  color: white;
+  width: 40%;
+  margin-top: 2rem;
+  
+}
+
+.contact-form__info form {
+  padding: 0 4rem;
+}
+
+.contact-form__info button {
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid #0078aa;
+  background-color: #0078aa;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.contact-form__info button:hover {
+  background-color: white;
+  color: #0078aa;
+}
+
+
+.footer {
+  background-color: #363636;
+  color: white;
+  width: 100%;
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .header-top {
+    height: 5rem;
+  }
+
+  .header-top-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: flex-start;
+  }
+
+  .header-top__menu {
+    justify-self: flex-end;
+  }
+
+  .menu a {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+  }
+  
+  .header-banner__detail {
+    text-align: left;
+    width: 520px;
+    left: 0%;
+  }
+
+  .banner-description {
+    width: 72%;
+  }
+
+  .banner-icon {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-image img {
+    width: 40rem;
+  }
+
+  .button-up {
+    position: fixed;
+    z-index: 5;
+    top: 90%;
+    right: 5%;
+  }
+
+  .about-info {
+    text-align: left;
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .about-info__title {
+    padding-left: 2rem;
+  }
+
+  .about-image img {
+   padding-top: 2rem;
+  } 
+
+  .service {
+    height: 55rem;
+  }
+
+  .service-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .price {
+    width: 100%;
+    background-image: url(../img/about_img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 47rem;
+    background-position: 265px 40px;
+  }
+
+  .price-content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 2rem;
+  }
+
+  .price-content {
+    padding: 2rem 0;
+  }
+
+  .bg-white {
+    height: 37rem;
+    margin-top: -2rem;
+    padding: 5rem 0;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-image img {
+    height: 45rem;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .contact-form__title {
+    margin-top: 6rem;
+    padding-left: 4rem;
+  }
+
+  .contact-form__title .top, .contact-form__title .bottom {
+    text-align: left;
+  }
+
+  .contact-form__info {
+    padding: 0 2rem;
+    text-align: left;
+  }
+
+  .contact-form__info button {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .contact-image img {
+    height: 55rem;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 992px) {
+  .banner-bg img {
+    height: auto;
+  }
+
+  .header-top-wrapper, .header-banner__info, .service-wrapper, .price-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .price {
+    background-size: contain;
+    background-position: right top;
+    margin-top: 4rem;
+  }
+  .about-image img {
+    object-fit: contain;
+    width: 100%;
+    height: 42rem;
+  }
+
+  .about-info {
+    width: 60%;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

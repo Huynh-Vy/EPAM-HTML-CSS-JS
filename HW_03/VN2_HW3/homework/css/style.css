@@ -1,0 +1,168 @@
+/* 
+write your code here
+*/
+
+h2 ~ p {
+    text-indent: 1.8rem;
+    line-height: 2rem;
+}
+
+h2 + p {
+    font-style: italic;
+}
+
+p::first-letter{
+    font-size: 30px;
+    color: lightskyblue;
+}
+
+.flex-2-col {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    gap: 10px;
+    align-items: center;
+}
+
+.tm-banner-inner {
+    flex: none;
+    background-color: white;
+}
+
+.tm-banner {
+    background-color: #f5f5f5;
+}
+
+#about ul li:hover {
+    background-color: lightskyblue;
+}
+
+#about ul li:hover h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.tm-content-box, .blocks {
+    box-shadow: 1px 1px 5px 2px rgb(173, 169, 169);
+}
+
+.blocks .tm-content-box {
+    box-shadow: none;
+}
+
+.blocks .flex-2-col {
+    box-shadow: none;
+}
+
+section::before {
+    content: "";
+    top: 3.3rem;
+    position: relative;
+    border-right: 252px solid transparent;
+    border-left: 0px solid transparent;
+    border-top: 31px solid lightblue;
+}
+
+section.heading::before, 
+section.tm-content-box::before{
+    content: '';
+    top: 2rem;
+    position: relative;
+    border-right: solid 271px transparent;
+    border-left: solid 0px transparent;
+    border-top: solid 36px lightblue;
+}
+
+section.blocks::before {
+    content: '';
+    top: 2rem;
+    position: relative;
+    border-right: solid 257px transparent;
+    border-left: solid 0px transparent;
+    border-top: solid 33px lightblue;
+}
+
+.img-contact-us {
+    margin-top: -1.5rem;
+}
+
+#ideas .tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+.tm-content-box .padding-medium ol li a {
+    color: #666;
+    position: relative;
+}
+
+.tm-content-box .padding-medium ol li a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+.tm-content-box .padding-medium ol li a:hover:after {
+    content: '';
+    border-bottom: solid 1px lightblue;
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+}
+
+.tm-content-box .padding-medium ol li:nth-child(1):after,
+.tm-content-box .padding-medium ol li:nth-child(3):after {
+    content: 'New';
+    color: red;
+    font-size: 12px;
+    position: relative;
+    width: 100%;
+    top: -7px;
+    left: 1px;
+}
+
+.box-work {
+    padding: 10px;
+}
+
+.box-work:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.box-work p {
+    text-indent: 0px;
+}
+
+.box-work p::first-letter {
+    color: #666;
+}
+
+.mandatory-field:after {
+   content: '*';
+   color: red;
+   font-weight: bold;
+}
+
+.submit-btn {
+    background-color: white;
+    border: 1px solid lightblue;
+    color: lightblue;
+    font-size: 20px;
+    border-radius: 0;
+    padding: 12px 50px;
+    float: right;
+}
+
+.submit-btn:hover {
+    background-color: lightblue;
+    color: white;
+    border: 1px solid lightblue;
+}
+
+.tm-nav-item:hover {
+    background-color: #f5f5f5;
+}
+
+
+
+
+

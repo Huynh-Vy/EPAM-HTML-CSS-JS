@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="main">
+      <div id="container">
+        <div id="content" role="main">
+          <header>
+            <div class="logo">
+              <a href="http://www.epam.com">
+                <img src="./logo.png" alt="Epam logo">
+              </a>
+            </div>
+           
+            <div class="title">
+              <h1><strong>HTML Elements</strong></h1>
+            </div>
+
+            <hr>
+
+            <div class="navbar">
+              <nav>
+                <a href="#"><strong>Home</strong></a>
+                <a href="#headers"><strong>Headers</strong></a>
+                <a href="#table"><strong>Table</strong></a>
+                <a href="#list"><strong>List</strong></a>
+                <a href="#format"><strong>Text formats</strong></a>
+                <a href="#blockquotes"><strong>Blockquotes</strong></a>
+              </nav>
+            </div>
+          
+            <hr>
+          </header>
+
+          <main>
+            <div id="headers">
+              <p>
+                Pay attention to h1 tag inside section element. Font-size for
+                 h1 is the same as font-size for h2, because we have to use 
+                 only one h1 on the page, and it is commonly used inside 
+                 header
+              </p>
+  
+              <h2>Header 2</h2>
+              <h3>Header 3</h3>
+              <h4>Header 4</h4>
+              <h5>Header 5</h5>
+              <h6>Header 6</h6>
+            </div>
+          
+            <hr>
+  
+            <div class="parapraphs">
+              <p>
+                Lorem ipsum dolor sit amet, <a href="#">test link</a> 
+                adipiscing elit. <strong>This is strong.</strong> Nullam 
+                dignissim convallis est. Quisque aliquam. This is emphasized. 
+                Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is 
+                H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, 
+                tincidunt nec, gravida vehicula, nisl. The New York Times 
+                (That’s a citation).<u>Underline</u>. Maecenas ornare tortor. 
+                Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+                Suspendisse quam sem, consequat at, commodo vitae, feugiat in,
+                nunc. Morbi imperdiet augue quis tellus.
+              </p>
+    
+              <p>
+                <abbr title="Hyper Text Markup Language">HTML</abbr> and 
+                <abbr title="Cascading Style Sheets">CSS</abbr> are our tools. 
+                Mauris a ante. Suspendisse quam sem, consequat at, commodo 
+                vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. 
+                Praesent mattis, massa quis luctus fermentum, turpis mi 
+                volutpat justo, eu volutpat enim diam eget metus. To copy a 
+                file type COPY <em>filename</em>. <del>Dinner`s at 5:00</del>. 
+                <mark>Let’s make that 7.</mark> This text has been struck.
+              </p>
+            </div>
+            
+            <hr>
+  
+            <div id="table">
+              <h2>Table</h2>
+  
+              <table>
+                <thead>
+                  <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Lviv</td>
+                    <td>Kyiv</td>
+                    <td>Kharkiv</td>
+                  </tr>
+    
+                  <tr>
+                    <td>Odessa</td>
+                    <td>Zhytomyr</td>
+                    <td>Dnipropetrovsk</td>
+                  </tr>
+    
+                  <tr>
+                    <td>Sumy</td>
+                    <td>Chernivtsi</td>
+                    <td>Lutsk</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div id="list">
+              <div class="order-list">
+                <h2>Unordered List</h2>
+                <ul>
+                  <li>List item 1</li>
+                  <li>List item 2
+                    <ul>
+                      <li>Some nested list item 1</li>
+                    </ul>
+                  </li>
+                  <li>List item 3</li>
+                </ul>
+              </div>
+
+              <div class="unorder-list">
+                <h2>Ordered List</h2>
+
+                <ol>
+                  <li>List item 1</li>
+                  <li>List item 2
+                    <ol>
+                      <li>Some nested list item 1</li>
+                    </ol>
+                  </li>
+                  <li>List item 3</li>
+                </ol>
+              </div>
+              
+              <div class="definition-list">
+                <h3>Definition List</h3>
+  
+                <dl>
+                  <dt>defines terms 1</dt>
+                  <dd>description 1</dd>
+                  <dt>defines terms 2</dt>
+                  <dd>description </dd>
+                </dl>
+              </div>
+
+              <div class="details">
+                <label for="details">Details</label>
+                <select name="details" id="details">
+                  <option value="HTML">HTML</option>
+                  <option value="CSS">CSS</option>
+                  <option value="JS">JS</option>
+                </select>
+              </div>
+            </div>
+  
+            <hr>
+  
+            <div id="format">
+              <h2>Text formats</h2>
+              <h3>Article Text</h3>
+  
+              <article>
+                <h2>Article title</h2>
+                <h3>Article description</h3>
+              </article>
+  
+              <h3>Preformatted Text</h3>
+  
+              <pre>
+  <strong>Text</strong>
+    in a <strong>pre</strong> element
+      is displayed in a fixed-width
+  font, and it preserves
+  both           spaces and
+      line breaks
+              </pre>
+  
+              <h3>Code</h3>
+              
+              <pre>
+  
+  .wrapper {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+  }
+  
+              </pre>
+            </div>
+  
+            <div id="blockquotes">
+              <h2>Blockquotes</h2>
+  
+              <p>Let’s keep it simple. Italics are good to help set it off 
+                from the body text. Be sure to style the citation.
+              </p>
+  
+              <blockquote>
+                "If you go back a few hundred years, what we take for granted 
+                today would seem like magic-being able to talk to people 
+                over long distances, to transmit images, flying, accessing 
+                vast amounts of data like an oracle. These are all things 
+                that would have been considered magic a few hundred years 
+                ago." 
+                <div><a href="#">Elon Musk</a></div>
+              </blockquote>
+            </div>
+  
+            <hr>
+
+            <div class="form">
+              <form id="formSubmit">
+                <label for="fName">First name:</label>
+                <input type="text" id="fName" name="fName"><br>
+                <label for="sName">Surname:</label>
+                <input type="text" id="sName" name="sName"><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br>
+              
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
+    
+                <button type="submit" form="formSubmit" value="Submit">Submit</button>
+              </form>
+            </div>
+          </main>
+
+          <footer>
+            © Copyright Epam Systems
+          </footer>            
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+

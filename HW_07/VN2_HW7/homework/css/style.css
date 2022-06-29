@@ -1,0 +1,50 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header-content__title h1 {
+    font-size: 1.8rem;
+}
+
+.header-content__description {
+    font-size: 0.9rem;
+    color: #525252;
+}
+
+.btn-danger {
+    background-color: coral;
+    border-color: coral;
+}
+
+.fs-08 {
+    font-size: 0.8rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.section-heading__title h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.section-heading__body {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.card-text {
+    font-weight: 400;
+}
+
+.footer-info h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.footer-bottom {
+    font-size: 0.8rem;
+}
+
