@@ -40,6 +40,7 @@
 
 7.	Create function which has all parameters always required. If they are not - throw error.
 •	Use default parameters feature and assign a function to it
+
 ![image](https://user-images.githubusercontent.com/87691625/178943619-26547843-b25a-4cbd-80b3-f1ab1d284600.png)
 ![image](https://user-images.githubusercontent.com/87691625/178943636-372c0c63-ad28-429f-9fb1-a13bc695677e.png)
 
