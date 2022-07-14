@@ -17,4 +17,5 @@ Total amount: 1210 (initial amount + total profit)
 
 
 + Simple simulator of casino roulette. 
+
 ![image](https://user-images.githubusercontent.com/87691625/178933288-ad60755a-42a0-402e-be07-dd6727b4f6d9.png)
