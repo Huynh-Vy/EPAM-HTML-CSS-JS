@@ -6,7 +6,7 @@ Creating responsive webpage for mobile, tablet and laptop
 2. Technologies:
 HTML, SCSS
 
-Desktop desgin:
+## Desktop desgin:
 
 ![image](https://user-images.githubusercontent.com/87691625/178906745-a0b49e00-e3e7-4fbf-b98e-7cb749d0b46d.png)
 
@@ -14,14 +14,14 @@ Desktop desgin:
 
 
 
-Tablet design:
+## Tablet design:
 
 ![image](https://user-images.githubusercontent.com/87691625/178907015-33dacd91-050d-4f8c-ab87-1ed0f71f326c.png)
 
 ![image](https://user-images.githubusercontent.com/87691625/178907118-1a6ca1aa-ffb9-4120-b0c5-13a7ecb6e787.png)
 
 
-Mobile design:
+## Mobile design:
 
 ![image](https://user-images.githubusercontent.com/87691625/178907269-3235ec20-6504-4594-b020-66e3bfa12416.png)
 
