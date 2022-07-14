@@ -23,7 +23,7 @@ isBigger(5, -1) // => true
 
 
 + Task #3
-+ Write a function - storeNames
+Write a function - storeNames
 
 It should accept an arbitrary number of strings and return an array of that strings
 
@@ -35,7 +35,6 @@ storeNames('Tommy Shelby', 'Ragnar Lodbrok', 'Tom Hardy')
 
 	
 + Task #4	
-+ 
 Write a function - getDifference
 
 It should accept two arguments as numbers and return their difference. But the function never returns a negative value. If second parameter is greater than first one, function will change their order.
@@ -50,7 +49,6 @@ getDifference(5, 8) // => 3
 
 
 + Task #5
-+ 
 Write a function - negativeCount
 
 It should accept an array of numbers and return the count of negative values from the array.
