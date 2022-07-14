@@ -14,11 +14,16 @@ HTML, SCSS
 
 
 
+
+
 ## Tablet design:
 
 ![image](https://user-images.githubusercontent.com/87691625/178907015-33dacd91-050d-4f8c-ab87-1ed0f71f326c.png)
 
 ![image](https://user-images.githubusercontent.com/87691625/178907118-1a6ca1aa-ffb9-4120-b0c5-13a7ecb6e787.png)
+
+
+
 
 
 ## Mobile design:
