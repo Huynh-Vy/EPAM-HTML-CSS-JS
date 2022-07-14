@@ -19,7 +19,7 @@ Task description: small tasks to practice on Date and Regular Expression
 - getProgrammersDay(2020); // "12 Sep, 2020 (Saturday)"
 - getProgrammersDay(2019); // "13 Sep, 2019 (Friday)"
 
-5. Write a function that accepts a weekday as a string (e.g. ‘Sunday’) and returns the number of days to the next specified weekday. The input should be case-insensitive. If the specified weekday is today, return `Hey, today is ${ specifiedWeekday } =)`, otherwise return `It's ${ number } day(s) left till ${ specifiedWeekday }`. Please note, although input is case-insensitive, weekday name in the output string should be always in proper case.
+5. Write a function that accepts a weekday as a string (e.g. ‘Sunday’) and returns the number of days to the next specified weekday. The input should be case-insensitive. If the specified weekday is today, return `Hey, today is ${ specifiedWeekday } =)`, otherwise return `It's ${ number } day(s) left till ${ specifiedWeekday }`. 
 - howFarIs(‘friday’); // "It's 1 day(s) left till Friday." (on October 22nd)
 - howFarIs('Thursday'); // "Hey, today is Thursday =)" (on October 22nd)
 
