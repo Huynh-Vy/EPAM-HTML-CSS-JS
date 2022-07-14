@@ -1,23 +1,24 @@
 # Javascript Practice
 
-1. Description:
-+ Write a JavaScript function that reverse an integer number.
+Description:
+
+1. Write a JavaScript function that reverse an integer number.
 
 reverseNumber(12345) // returns 54321
 
 reverseNumber(-56789) // returns -98765
 
-+ Write function, which iterates over array and executes function on each element.
+2. Write function, which iterates over array and executes function on each element.
 
 forEach([2,5,8], function(el) { console.log(el) }) // logs to console: 2 5 8
 
-+ Write function, which returns transformed array based on function, which is passed as a parameter. Reuse function forEach() from task 2.
+3. Write function, which returns transformed array based on function, which is passed as a parameter. Reuse function forEach() from task 2.
 
 map([2, 5, 8], function(el) { return el + 3; }) // returns [5, 8, 11]
 
 map([1, 2, 3, 4, 5], function (el) { return el * 2; }) // returns [2, 4, 6, 8, 10]
 
-+ Write function, which returns filtered array based on function, which passed as a parameter. Reuse function forEach()  from task 2.
+4. Write function, which returns filtered array based on function, which passed as a parameter. Reuse function forEach()  from task 2.
 
 filter([2, 5, 1, 3, 8, 6], function(el) { return el > 3 }) // returns [5, 8, 6]
 
