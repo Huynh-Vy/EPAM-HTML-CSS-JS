@@ -4,13 +4,13 @@ Description:
 
 1. Write a JavaScript function that reverse an integer number.
 
-reverseNumber(12345) // returns 54321
+  reverseNumber(12345) // returns 54321
 
-reverseNumber(-56789) // returns -98765
+  reverseNumber(-56789) // returns -98765
 
 2. Write function, which iterates over array and executes function on each element.
 
-forEach([2,5,8], function(el) { console.log(el) }) // logs to console: 2 5 8
+  forEach([2,5,8], function(el) { console.log(el) }) // logs to console: 2 5 8
 
 3. Write function, which returns transformed array based on function, which is passed as a parameter. Reuse function forEach() from task 2.
 
